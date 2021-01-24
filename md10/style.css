@@ -1,0 +1,715 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.header
+{
+    display: block;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+.header__container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+}
+.header__logo
+{
+    display: block;
+    width: 70px;
+    height: 40px;
+    margin: 20px 0;
+    background: url("/img/md10_shape.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.header__menu
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 500px);
+    height: 16px;
+    margin: 32px 0 32px 430px;
+    justify-content: space-between;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    /*margin-top: 80px;*/
+}
+
+.banner
+{
+    display: block;
+    width: 100%;
+    background: url("/img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner__container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 740px;
+    margin: 0 auto;
+}
+.banner__p1
+{
+    display: block;
+    width: 480px;
+    height: 60px;
+    margin-top: 230px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.banner__p2
+{
+    display: block;
+    width: 480px;
+    height: 125px;
+    font-size: 75px;
+    font-weight: bolder;
+    background: linear-gradient(to right, black, #6cbef6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner__p3
+{
+    display: block;
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.banner__button
+{
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #6cbef6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 37.5px;
+}
+.banner__button p
+{
+    margin-top: 20px;
+}
+
+.about_us
+{
+    display: block;
+    width: 100%;
+}
+.about_us__container
+{
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+    background-color: white;
+}
+.about_us__container h1
+{
+    text-align: center;
+    margin: 120px 0 0 0;
+}
+.about_us__container p
+{
+    text-align: justify;
+    margin: 60px 0 0 0;
+}
+
+.products
+{
+    display: block;
+    width: 100%;
+}
+.products__container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+    background-color: white;
+    justify-content: space-between;
+}
+.products__t-shirts,
+.products__sport-suits,
+.products__caps
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px;
+    margin: 60px 0;
+    position: relative;
+}
+.products__photo1,
+.products__photo2,
+.products__photo3
+{
+    display: block;
+    width: 320px;
+    height: 320px;
+}
+.products__photo1 img,
+.products__photo2 img,
+.products__photo3 img
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.products__type
+{
+    display: block;
+    width: 320px;
+    height: 80px;
+    background-color: #404040;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    color: white;
+}
+.products__type h2
+{
+    text-align: center;
+}
+.products__container2
+{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+}
+.products__switch
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 60px 0;
+}
+.products__back
+{
+    display: block;
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+}
+.products__for-hr
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 760px;
+    height: 50px;
+    margin: 0 205px 0 180px;
+    justify-content: space-between;
+}
+.products__for-hr h2
+{
+    margin: 0;
+}
+.products__for-hr hr
+{
+    width: 100%;
+    height: 1px;
+    background-color: #bfbfbf;
+    border: none;
+    margin: 0;
+}
+.products__t-shirts2
+{
+    text-align: center;
+    width: 140px;
+    height: 49px;
+    display: block;
+    cursor: pointer;
+}
+.products__t-shirts2 hr
+{
+    display: none;
+    width: 140px;
+    height: 5px;
+    background-color: #6cbef6;
+    border: none;
+    margin-top: 16px;
+}
+.products__sportsuits2
+{
+    text-align: center;
+    width: 180px;
+    height: 49px;
+    display: block;
+    cursor: pointer;
+}
+.products__sportsuits2 hr
+{
+    display: none;
+    width: 180px;
+    height: 5px;
+    background-color: #6cbef6;
+    border: none;
+    margin-top: 16px;
+}
+.products__caps2
+{
+    text-align: center;
+    width: 110px;
+    height: 49px;
+    display: block;
+    cursor: pointer;
+}
+.products__caps2 hr
+{
+    display: none;
+    width: 110px;
+    height: 5px;
+    background-color: #6cbef6;
+    border: none;
+    margin-top: 16px;
+}
+.products__activepr
+{
+    display: block;
+    width: 100%;
+}
+.products__passivepr
+{
+    display: none;
+    width: 100%;
+}
+.products__information
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.products__photos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 400px;
+    justify-content: space-between;
+}  
+.products__2sm
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 400px;
+    justify-content: space-between;
+}
+.products__sm1
+{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.products__sm2
+{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.products__1big
+{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+.products__character
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 400px;
+}
+.products__text
+{
+    display: block;
+    width: 320px;
+    height: 185px;
+    margin: 0;
+}
+.products__text h2
+{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.products__character p
+{
+    margin: 0 0 10px 0;
+}
+.products__character select
+{
+    width: 100%;
+}
+.products__row1
+{
+    display: block;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+.products__row2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 55px;
+    color: #808080;
+}
+.products__sex
+{
+    display: block;
+    width: 100px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+.products__size
+{
+    display: block;
+    width: 70px;
+    height: 55px;
+    margin: 0 0 20px 20px;
+}
+.products__count
+{
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 0 20px 75px;
+}
+.products__regulator
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20px;
+    justify-content: space-between;
+}
+.products__arrdown
+{
+    display: block;
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+.products__number
+{
+    color: #000000 !important;
+}
+.products__arrup
+{
+    display: block;
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+.products__row3
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.products__row3 h2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    justify-content: space-between;
+}
+.products__price
+{
+    display: block;
+    width: 145px;
+    margin-right: 45px;
+}
+.products__cart
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("/img/cart.svg");
+    cursor: pointer;
+}
+.products__buy
+{
+    display: block;
+    width: 55px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+.products__buy a
+{
+    color: #6cbef6;
+}
+
+.styles
+{
+    display: block;
+    width: 100%;
+}
+.styles__container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.styles__container h1
+{
+    text-align: center;
+    margin: 60px auto;
+    height: 40px;
+}
+.styles__block
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 0 120px 0;
+    position: relative;
+}
+.styles__photo
+{
+    display: block;
+    width: 670px;
+    height: 450px;
+    background: url("/img/style7.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.styles__arr1
+{
+    display: block;
+    width: 50px;
+    height: 12px;
+    margin-top: 510px;
+    margin-left: 390px;
+    margin-bottom: 78px;
+    cursor: pointer;
+}
+.styles__arr2
+{
+    display: block;
+    width: 50px;
+    height: 12px;
+    margin-top: 90px;
+    margin-left: 290px;
+    margin-bottom: 78px;
+    cursor: pointer;
+}
+.styles__desc
+{
+    display: block;
+    width: 670px;
+    height: 450px;
+    margin-top: 150px;
+    margin-left: 500px;
+    bottom: 0;
+    right: 0;
+    background-color: #404040;
+    position: absolute;
+    color: white;
+}
+.styles__desc h2,
+.styles__desc p
+{
+    margin: 60px 70px 0 250px;
+    text-align: justify;
+}
+
+.quotes
+{
+    display: block;
+    width: 100%;
+    background-color: #404040;
+}
+.quotes__container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.quotes__photo
+{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 90px 0 200px;
+    /*background: url("/img/quote1.png");
+    background-repeat: no-repeat;*/
+}
+.quotes__text
+{
+    display: block;
+    width: 500px;
+    height: 180px;
+    margin-right: 200px;
+}
+.quotes__text h2
+{
+    margin: 0 0 15px 0;
+    color: white;
+}
+.quotes__achiv
+{
+    margin: 0 0 35px 0;
+    color: #6cbef6;
+}
+.quotes__quote
+{
+    font-style: italic;
+    color: white;
+}
+
+.footer
+{
+    display: block;
+    width: 100%;
+    background-color: #404040;
+}
+.footer__container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 410px;
+    margin: 0 auto;
+    color: white;
+}
+.footer__container hr
+{
+    width: 100px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: #6cbef6;
+    border: none;
+}
+.footer__social-media
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 570px;
+    height: 40px;
+    margin: 60px auto;
+    justify-content: space-between;
+}
+.footer__pics
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer__pic1, .footer__pic2, .footer__pic3
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.footer__sponsors
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 70px;
+    justify-content: space-between;
+}
+.footer__sps
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.footer__spb
+{
+    display: block;
+    width: 170px;
+    height: 70px;
+    cursor: pointer;
+}
+.footer__sp
+{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+.footer__rp
+{
+    text-align: center;
+    margin-top: 60px;
+}
